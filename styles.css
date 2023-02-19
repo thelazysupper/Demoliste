@@ -7,7 +7,14 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Basic Sans', sans-serif;
+    letter-spacing: 0.6px;
+    background-color: #FAF9F8;
+}
+main {
+    padding-inline: 1rem;
+}
 /* Text styles */
 
 h1 {
@@ -20,11 +27,10 @@ h2 {
     font-weight: 400;
     font-family: 'Basic Sans', sans-serif;
 }
-body {
-    font-family: 'Basic Sans', sans-serif;
-    letter-spacing: 0.6px;
-    background-color: #FAF9F8;
+p {
+    color: white;
 }
+
 li {
     font-family: 'Basic Sans', sans-serif;
 }
@@ -42,6 +48,18 @@ header {
     position: fixed;
     top: 0;
 }
+#logo {
+    height: 2rem;
+}
+#header_links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+#header_links > p:hover {
+    color: #E0EBF4;
+    cursor: pointer;
+}
 #container {
     justify-content: center;
     align-items: center;
@@ -56,12 +74,6 @@ header {
 }
 /* List title */
 
-#editTitleBtn {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: .5rem .5rem;
-    border-radius: 100%;
-}
 .list_title_wrapper {
     flex-direction: row;
     display: flex; /* Fix this */
@@ -86,6 +98,27 @@ header {
 #titleInput:focus-within {
     outline: none;
 }
+
+/* List title edit button */
+
+#editTitleBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .5rem .5rem;
+    border-radius: 100%;
+}
+#editTitleBtn > #edit-icon-white {
+    display: none;
+}
+#editTitleBtn:hover > #edit-icon-white {
+    display: flex;
+}
+#editTitleBtn:hover > #edit-icon-blue {
+    display: none;
+}
+
+/* Save title button */
+
 #save-title-btn {
     display: none;
     padding: .7rem 1.2rem;
@@ -154,9 +187,8 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     padding: .5rem;
-    width: 500px;
     margin-block: 1rem;
-    width: 40vw;
+    width: 100%;
 }
 .input_wrapper > #itemInput {
     font-size: 1rem;
@@ -184,6 +216,11 @@ li {
     font-weight: 600;
     letter-spacing: 0.6;
     font-family: 'Basic Sans', sans-serif;
+    align-items: center;
+}
+li:hover {
+    opacity: 75%;
+    cursor: pointer;
 }
 li input[type="text"] {
     margin-right: 1rem;
@@ -199,7 +236,11 @@ li input[type="text"] {
 }
 li button {
     display: flex;
+    height: fit-content;
+    padding: .7rem 1.2rem;
+    background-color: white;
 }
+
   
 #clearListBtn, #saveListBtn {
     transition: .3s linear;
@@ -235,13 +276,17 @@ li button {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        justify-content: center;
+        padding-inline: 1rem;
+    }
     #container {
         min-width: 100%;
     }
     #shopping_list_container {
         display: flex;
-        width: 100vw;
-        padding-inline: 1rem;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -252,26 +297,51 @@ li button {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: .5rem;
         width: 100%;
         margin-block: 1rem;
         margin-inline: 1rem;
+    }
+    .header_right {
+        display: none;
     }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .header_right {
+        display: none;
+    }
+    .header_mobile_menu > #hamburger_menu_icon:hover {
+        opacity: 75%;
+        cursor: pointer;
+    }
+    .header_mobile_menu > #hamburger_menu_icon {
+        height: 1.7rem;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    main {
+        width: 100%;
+        justify-content: center;
+        padding-inline: 25%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    main {
+        width: 100%;
+        justify-content: center;
+        padding-inline: 30%;
+    }
+    .header_right {
+        display: flex;
+    }
+    .header_mobile_menu {
+        display: none;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
