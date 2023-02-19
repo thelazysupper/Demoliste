@@ -30,6 +30,7 @@ h2 {
 }
 p {
     color: white;
+    font-family: 'Basic Sans', Helvetica sans-serif;
 }
 
 li {
@@ -56,6 +57,7 @@ header {
     display: flex;
     flex-direction: row;
     column-gap: 3rem;
+    align-items: center;
 }
 #header_links > #header_link_item:hover {
     opacity: 75%;
