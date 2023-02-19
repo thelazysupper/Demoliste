@@ -197,6 +197,7 @@ ul {
     color: #12419F;
     margin-left: .5rem;
     font-family: 'Basic Sans', sans-serif;
+    width: 70%;
 }
 .input_wrapper > #itemInput:focus-within {
     outline: none;
@@ -223,7 +224,6 @@ li:hover {
     cursor: pointer;
 }
 li input[type="text"] {
-    margin-right: 1rem;
     color: #12419F;
     border: none;
     font-size: 1.2rem;

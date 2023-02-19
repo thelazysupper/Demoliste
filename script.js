@@ -16,16 +16,6 @@ let savedItems = JSON.parse(localStorage.getItem("shoppingListItems")) || [];
 renderTitle();
 renderList(savedItems);
 
-// Edit title when "Edit Title" button is clicked
-editTitleBtn.addEventListener("click", editTitle);
-
-// Save title when "Enter" key is pressed in title input field
-titleInput.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    saveTitle();
-  }
-});
-
 // Add item to list when "Add Item" button is clicked
 addItemBtn.addEventListener("click", addItem);
 
