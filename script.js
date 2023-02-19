@@ -138,7 +138,4 @@ function changeToSaved(){
     document.getElementById("saveListBtn").innerHTML = 'Lagret!';
 }
 
-// Reveal title save button on reveal
-
-
 
