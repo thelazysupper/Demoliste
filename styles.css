@@ -20,7 +20,7 @@ main {
 h1 {
     color: #12419F;
     font-size: 2rem;
-    font-family: 'Basic Sans', Helvetica sans-serif;
+    font-family: 'Basic Sans', sans-serif;
 }
 h2 {
     color: #12419F;
@@ -68,6 +68,7 @@ header {
     flex-direction: row;
     column-gap: 1rem;
     transition: .2s ease-in-out;
+    align-items: center;
 }
 #container {
     justify-content: center;
