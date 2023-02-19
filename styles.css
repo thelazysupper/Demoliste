@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/xpi1scr.css");
+@import url("https://use.typekit.net/xpi1scr.css");
 
 * {
     margin: 0;
@@ -179,9 +180,15 @@ button:active {
 li button {
     display: block;
 }
+#deleteBtn {
+    
+}
   
 #clearListBtn, #saveListBtn {
     transition: .3s linear;
+    display: flex;
+    flex-direction: row;
+    column-gap: .5rem;
 }
 #bottom_bar {
     position: fixed;
@@ -197,4 +204,33 @@ li button {
     padding: 2rem;
     border-top: solid 1px #D0D9EC;
     background-color: #FAF9F8;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #shopping_list_container {
+        display: flex;
+        width: 100%;
+        margin-inline: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
