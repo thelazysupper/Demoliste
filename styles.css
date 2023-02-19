@@ -1,0 +1,92 @@
+@import url("https://use.typekit.net/xpi1scr.css");
+
+body {
+    font-family: 'Basic Sans', sans-serif;
+    letter-spacing: 0.6px;
+    background-color: #FAF9F8;
+}
+  
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+  
+#shoppingList {
+    list-style-type: none;
+    padding: 0;
+}
+.input_wrapper {
+    background-color: white;
+    border: 1px solid #D0D9EC;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.input_wrapper > #itemInput {
+    font-size: 1rem;
+    padding: 0;
+    border: none;
+    color: #12419F;
+    margin-left: .5rem;
+    font-family: 'Basic Sans', sans-serif;
+    width: 80%;
+}
+.input_wrapper > #itemInput:focus-within {
+    outline: none;
+}
+.input_wrapper > #itemInput::placeholder {
+    color: #7996CA;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: #E0EBF4;
+    color: #12419F;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  
+  li input[type="text"] {
+    margin-right: 10px;
+    color: #12419F;
+    border: none;
+    font-size: 1rem;
+    background-color: #E0EBF4;
+}
+button {
+    background-color: #E0EBF4;
+    color: #12419F;
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: 'Basic Sans', sans-serif;
+    letter-spacing: 0.6px;
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 15px;
+    transition: .2s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #12419F;
+    color: white;
+}
+button:active {
+    opacity: 75%;
+}
+  
+li button {
+    display: block;
+}
+  
+#buttons {
+    margin-top: 20px;
+}
+  
+#clearListBtn, #saveListBtn {
+    margin-right: 10px;
+}
+  
