@@ -17,9 +17,16 @@
             </div>
             <div class="header_right">
                 <div id="header_links">
-                    <p>Kampanjer</p>
-                    <p>Min side</p>
-                    <p>Handlekurv</p>
+                    <div id="header_link_item">
+                        <p>Oppskrifter</p>
+                    </div>
+                    <div id="header_link_item">
+                        <p>Kampanjer</p>
+                    </div>
+                    <div id="header_link_item">
+                        <img src="./assets/shopping_cart_icon_white.svg">
+                        <p>Handlekurv</p>
+                    </div>
                 </div>
             </div>
             <div class="header_mobile_menu">
@@ -40,8 +47,10 @@
             </ul>
         </div>
         <div id="bottom_bar">
-            <button id="saveListBtn" onclick="changeToSaved()">Lagre liste</button>
-            <button id="clearListBtn"><img id="trash_icon_blue" src="./assets/trash_icon_blue.svg"><img id="trash_icon_white"src="./assets/trash_icon_white.svg">Tøm liste</button>
+            <div class="bottom_icons">
+                <button id="saveListBtn" onclick="changeToSaved()">Lagre liste</button>
+                <button id="clearListBtn"><img id="trash_icon_blue" src="./assets/trash_icon_blue.svg"><img id="trash_icon_white"src="./assets/trash_icon_white.svg">Tøm liste</button>    
+            </div>
         </div>
         </main> 
         <script src="script.js"></script>

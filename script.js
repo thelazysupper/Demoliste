@@ -133,10 +133,6 @@ shoppingList.appendChild(listItem);
 });
 }
 
-// Add event listener to Save Title button
-const saveTitleBtn = document.getElementById('save-title-btn');
-saveTitleBtn.addEventListener("click", saveTitle);
-
 // Function - changes text from "lagre" to "lagret"
 function changeToSaved(){
     document.getElementById("saveListBtn").innerHTML = 'Lagret!';
@@ -144,16 +140,5 @@ function changeToSaved(){
 
 // Reveal title save button on reveal
 
-function revealTitleInput() {
-  const saveTitleBtn = document.getElementById("save-title-btn");
-  const saveListBtn = document.getElementById("save-list-btn");
 
-  if (saveTitleBtn) {
-    saveTitleBtn.style.display = "none";
-    saveTitleBtn.style.display = "flex";
-  } else {
-    saveListBtn.style.display = "none";
-    console.log("Save title button not found!");
-  }
-}
 
