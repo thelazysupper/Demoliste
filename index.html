@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Innom - Handleliste</title>
+        <link rel="icon" type="image/x-icon" href="/assets/innom_logo_blå.svg">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://use.typekit.net/xpi1scr.css">
         <meta name="description" content="">
@@ -19,6 +20,7 @@
                 <img id="hamburger_menu_icon" src="./assets/hamburger_icon_white.svg">
             </div>
         </header>
+        <main>
         <div id="container">
             <h1 id="listTitle">Shopping List</h1>
             <button id="editTitleBtn" onclick="revealTitleInput()"><img id="edit-icon-blue" src="./assets/edit_icon_blue.svg"></button>
@@ -33,15 +35,14 @@
             <button id="addItemBtn">Legg til</button>
         </div>
             <ul id="shoppingList">
-                <div id="empty_list">
-                    <h3>Her var det tomt...</h3>
-                </div>
+                
             </ul>
         </div>
         <div id="bottom_bar">
             <button id="saveListBtn" onclick="changeToSaved()">Lagre liste</button>
-            <button id="clearListBtn"><img src="./assets/trash_icon_blue.svg">Tøm liste</button>
+            <button id="clearListBtn"><img id="trash_icon_blue" src="./assets/trash_icon_blue.svg"><img id="trash_icon_white"src="./assets/trash_icon_white.svg">Tøm liste</button>
         </div>
+        </main> 
         <script src="script.js"></script>
     </body>
 </html>

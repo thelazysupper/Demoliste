@@ -136,7 +136,7 @@ const itemInput = document.createElement("input");
 itemInput.type = "text";
 itemInput.value = item.name;
 const deleteBtn = document.createElement("button");
-deleteBtn.innerHTML = "Delete";
+deleteBtn.innerHTML = "Slett";
 listItem.appendChild(itemInput);
 listItem.appendChild(deleteBtn);
 shoppingList.appendChild(listItem);
